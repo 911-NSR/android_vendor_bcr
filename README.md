@@ -32,6 +32,29 @@ BCR is a simple Android call recording app for rooted devices or devices running
 * No network access permission
 * Works with call screening on Pixel devices (records the caller, but not the automated system)
 
+### Version 1.73
+
+* Update French translations ([PR #615 @NSO73])
+* Add Romanian translations ([PR #613 @gilav23])
+* Add debug option to save log file ([PR #622 @chenxiaolong])
+* Fix another Cursor resource leak ([PR #623 @chenxiaolong])
+* Show error message if contact group picker fails to query the list of groups ([Issue #620], [PR #624 @chenxiaolong])
+* Enable predictive back gestures ([PR #625 @chenxiaolong])
+* Don't fail to populate contact group list when the SOURCE_ID is null ([Issue #620], [PR #626 @chenxiaolong])
+* Add account name to contact group list ([Issue #620], [PR #626 @chenxiaolong])
+
+### Version 1.72
+
+* Add support for specifying a minimum duration for keeping a recording ([Issue #411], [Issue #604], [PR #605 @chenxiaolong])
+* Add support for contact groups in auto-record rules ([Issue #536], [PR #606 @chenxiaolong])
+* Fix Cursor resource leak ([PR #610 @chenxiaolong])
+* Minor notification code cleanup ([PR #611 @chenxiaolong])
+* Update dependencies ([PR #612 @chenxiaolong])
+
+### Version 1.71
+
+* Fix notification not showing after recording to the default output directory ([PR #603 @chenxiaolong])
+
 ## Non-features
 
 As the name alludes, BCR intends to be a basic as possible. The project will have succeeded at its goal if the only updates it ever needs are for compatibility with new Android versions. Thus, many potentially useful features will never be implemented, such as:
