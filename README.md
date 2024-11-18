@@ -32,6 +32,18 @@ BCR is a simple Android call recording app for rooted devices or devices running
 * No network access permission
 * Works with call screening on Pixel devices (records the caller, but not the automated system)
 
+### Unreleased
+
+* Rebase icon off the latest material call and mic icons ([PR #635 @chenxiaolong])
+
+### Version 1.74
+
+* Update French translations ([PR #627 @NSO73])
+* Work around crash in Android itself when querying sample rates on older Android versions ([Issue #628], [PR #629 @chenxiaolong])
+* Work around crash when accessing private Android APIs in Android 9 ([Issue #628], [PR #630 @chenxiaolong])
+* Update all dependencies ([PR #631 @chenxiaolong])
+* Work around Android 9 and 10 not knowing the file extension for the `audio/mp4` MIME type ([PR #632 @chenxiaolong])
+
 ### Version 1.73
 
 * Update French translations ([PR #615 @NSO73])
