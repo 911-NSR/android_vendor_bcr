@@ -19,10 +19,10 @@ BCR is a simple Android call recording app for rooted devices or devices running
 
 * Supports Android 9 and newer
 * Supports output in various formats:
-  * OGG/Opus - Lossy, smallest files, default on Android 10+
-  * M4A/AAC - Lossy, smaller files, default on Android 9
-  * FLAC - Lossless, larger files
-  * WAV/PCM - Lossless, largest files, least CPU usage
+* OGG/Opus - Lossy, smallest files, default on Android 10+
+* M4A/AAC - Lossy, smaller files, default on Android 9
+* FLAC - Lossless, larger files
+* WAV/PCM - Lossless, largest files, least CPU usage
 * Supports Android's Storage Access Framework (can record to SD cards, USB devices, etc.)
 * Direct boot aware (records calls prior to first unlock after a reboot)
 * Per-contact auto-record rules
@@ -34,7 +34,21 @@ BCR is a simple Android call recording app for rooted devices or devices running
 
 ### Unreleased
 
+* Add new `duration_secs_wall` field to the metadata JSON output file ([PR #674 @chenxiaolong])
+* This measures the wall time from when the recording process started to when it ended. This value can be compared with `duration_secs_total` to determine if Android is sending too little audio to BCR.
 * Rebase icon off the latest material call and mic icons ([PR #635 @chenxiaolong])
+
+### Version 1.77
+
+* Update Italian translations ([PR #653 @nicorac])
+* Update Hebrew translations ([PR #655 @tzagim])
+* Update dependencies ([PR #665 @chenxiaolong])
+
+### Version 1.76
+
+* Update French translations ([PR #651 @NSO73])
+* Assume that `android.hardware.telephony.subscription` is supported on Android 11+ ([Issue #649], [PR #652 @chenxiaolong])
+* OxygenOS on OnePlus devices supports this feature, but does not declare that it does. This workaround allows features that depend on the SIM slot (eg. SIM slot rules) to work.
 
 ### Version 1.74
 
