@@ -32,11 +32,12 @@ BCR is a simple Android call recording app for rooted devices or devices running
 * No network access permission
 * Works with call screening on Pixel devices (records the caller, but not the automated system)
 
-### Unreleased
+### Version 1.78
 
 * Add new `duration_secs_wall` field to the metadata JSON output file ([PR #674 @chenxiaolong])
 * This measures the wall time from when the recording process started to when it ended. This value can be compared with `duration_secs_total` to determine if Android is sending too little audio to BCR.
-* Rebase icon off the latest material call and mic icons ([PR #635 @chenxiaolong])
+* Add Persian translations ([PR #681 @namini40])
+* Update dependencies and target API 36 ([PR #684 @chenxiaolong])
 
 ### Version 1.77
 
